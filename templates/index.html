@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Summarization</title>
+</head>
+<body>
+    <form method="post">
+        <div>
+            <label for="text">Enter Text:</label><br>
+            <textarea id="text" name="text" rows="10" cols="50" placeholder="Enter text here...">{{ original_text }}</textarea>
+        </div>
+        <div>
+            <button type="submit">Generate Summary</button>
+        </div>
+    </form>
+    <div>
+        <label for="summary">Summary:</label><br>
+        <textarea id="summary" name="summary" rows="5" cols="50" readonly>{{ summary }}</textarea>
+    </div>
+</body>
+</html>
